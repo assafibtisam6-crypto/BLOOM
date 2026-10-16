@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOM | Natural Handmade Soap & Skincare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar" data-en="🇱🇧 Fast Delivery Across Lebanon for Only $5!" data-ar="🇱🇧 توصيل سريع لجميع مناطق لبنان بقيمة 5$ فقط!">
+        🇱🇧 Fast Delivery Across Lebanon for Only $5!
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="images2/logo gemini.jpg" alt="BLOOM Logo" class="brand-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#story" data-en="Our Story" data-ar="قصتنا">Our Story</a></li>
+                <li><a href="#products" data-en="Products" data-ar="المنتجات">Products</a></li>
+                <li><a href="#gifts" data-en="BLOOM Gifts" data-ar="هدايا بلوم">BLOOM Gifts</a></li>
+                <li><a href="#faq" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="lang-btn" onclick="toggleLanguage()">
+                <i class="fa-solid fa-globe"></i> <span id="langText">عربي</span>
+            </button>
+            <button class="cart-icon-btn" onclick="toggleCart()">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="hero-slider" id="home">
+        <div class="hero-progress"><span></span></div>
+
+        <div class="slide active">
+            <div class="slide-content">
+               
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 14.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 4.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+               
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 8.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 9.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 12.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 14.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 6.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 7.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 11.jpg" alt="BLOOM"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                
+            </div>
+            <div class="slide-image"><img src="images1/gemini backgrond 15.jpg" alt="BLOOM"></div>
+        </div>
+
+        <button class="hero-arrow hero-prev" type="button" onclick="manualHero(-1)" aria-label="Previous slide">&#10094;</button>
+        <button class="hero-arrow hero-next" type="button" onclick="manualHero(1)" aria-label="Next slide">&#10095;</button>
+        <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <section class="story-section" id="story">
+        <div class="story-container">
+            <div class="story-image">
+                <img src="images2/img 10.jpg" alt="BLOOM Story">
+            </div>
+            <div class="story-content">
+                <div class="sub-title-tag" data-en="Our Story" data-ar="قصتنا">Our Story</div>
+                <h2 class="section-title" style="text-align: left;" data-en="Inspired by Nature" data-ar="مستوحاة من الطبيعة">Inspired by Nature</h2>
+                <p data-en="Inspired by nature, at BLOOM we carefully select the finest extracts and ingredients, chosen for their purity and quality, to create gentle, skin-loving products." data-ar="مستوحاة من الطبيعة، نقوم في بلوم بعناية فائقة باختيار أجود المستخلصات والمكونات النقية وعالية الجودة، لنبتكر منتجات لطيفة تعشقها بشرتك.">Inspired by nature, at BLOOM we carefully select the finest extracts and ingredients, chosen for their purity and quality, to create gentle, skin-loving products.</p>
+                <p data-en="Crafted to nourish and care for your skin, each formula helps you bloom, revealing your glow and letting your beauty flourish with every use." data-ar="مصنوعة لتغذية والعناية ببشرتك، تساعدك كل تركيبة على التألق وإظهار جمالك المشرق مع كل استخدام.">Crafted to nourish and care for your skin, each formula helps you bloom, revealing your glow and letting your beauty flourish with every use.</p>
+                <div class="story-quote" data-en='"Natural. Gentle. Effective. Care for your skin, and let your beauty bloom." ' data-ar='"طبيعي. لطیف. فعال. اعتنِ بشرتك ودع جمالك يزهر." '>
+                    "Natural. Gentle. Effective. Care for your skin, and let your beauty bloom." 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us-section" id="about">
+        <div class="why-container">
+            <div class="sub-title-tag" data-en="Why us" data-ar="لماذا نحن">Why us</div>
+            <h2 class="section-title" data-en="Why Shop at BLOOM?" data-ar="لماذا تتسوق من بلوم؟">Why Shop at BLOOM?</h2>
+            <p class="why-intro" data-en="Our range of handcrafted soaps is made to treat you and your skin, from morning washing-ups to evening relaxing baths." data-ar="تم تصميم تشكيلة الصوابين المصنوعة يدوياً لتدلل بشرتك وتعتني بها، من غسول الصباح وحتى حمامات الاسترخاء المسائية.">Our range of handcrafted soaps is made to treat you and your skin, from morning washing-ups to evening relaxing baths.</p>
+            
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3 data-en="100% organic" data-ar="عضوي 100%">100% organic</h3>
+                    <p data-en="Our products contain only natural ingredients. We don't use parabens and flavorings." data-ar="منتجاتنا تحتوي حصرياً على مكونات طبيعية ولا نستخدم البارابين أو المنكهات الصناعية.">Our products contain only natural ingredients. We don't use parabens and flavorings.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3 data-en="Natural herbs" data-ar="أعشاب طبيعية">Natural herbs</h3>
+                    <p data-en="Our soap is based on natural herbs like lavender, verbena, chamomile, and others." data-ar="صوابيننا مرتكزة على أعشاب طبيعية مثل اللافندر، البابونج وغيرها الكثير.">Our soap is based on natural herbs like lavender, verbena, chamomile, and others.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-atom"></i></div>
+                    <h3 data-en="Antioxidants" data-ar="مضادات الأكسدة">Antioxidants</h3>
+                    <p data-en="Made from natural ingredients, this soap contains natural antioxidants that bring you peace of mind." data-ar="مصنوعة من مكونات طبيعية غنية بمضادات الأكسدة لتمنحك الراحة والنقاء.">Made from natural ingredients, this soap contains natural antioxidants that bring you peace of mind.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <h3 data-en="Deep hydration" data-ar="ترطيب عميق">Deep hydration</h3>
+                    <p data-en="With daily use of our soap, your skin will always be well hydrated, soft, and resilient." data-ar="مع الاستخدام اليومي لصابوننا، ستظل بشرتك دائماً مرطبة، ناعمة ومفعمة بالحيوية.">With daily use of our soap, your skin will always be well hydrated, soft, and resilient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2 class="section-title" data-en="BLOOM Products List & Benefits" data-ar="قائمة منتجات وفوائد بلوم">BLOOM Products List & Benefits</h2>
+
+        <h3 class="category-title" data-en="Natural Soap" data-ar="الصوابين الطبيعية">Natural Soap</h3>
+        <div class="products-grid">
+            <div class="product-card"><img src="images2/gemini wrd.jpg" alt="Rose Soap" class="product-img"><div class="product-info"><h4 data-en="Rose Soap" data-ar="صابونة الورد">Rose Soap</h4><p class="product-desc" data-en="Rich in natural rose extract, moisturizes dry skin and gives a fragrant glow." data-ar="غنية بخلاصة الورد الطبيعي، ترطب البشرة الجافة وتمنحها نعومة وإشراقة عطرية.">Rich in natural rose extract, moisturizes dry skin and gives a fragrant glow.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Rose Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini fa7m.jpg" alt="Charcoal Soap" class="product-img"><div class="product-info"><h4 data-en="Charcoal Soap" data-ar="صابونة الفحم">Charcoal Soap</h4><p class="product-desc" data-en="Deeply cleanses pores, absorbs toxins and excess oils, great for acne-prone skin." data-ar="تنظف المسام بعمق، تمتص السموم والزيوت الزائدة، ممتازة للبشرة المعرضة للحبوب.">Deeply cleanses pores, absorbs toxins and excess oils, great for acne-prone skin.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Charcoal Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/3asal.jpg" alt="Honey Soap" class="product-img"><div class="product-info"><h4 data-en="Honey Soap" data-ar="صابونة العسل">Honey Soap</h4><p class="product-desc" data-en="Highly nourishing and moisturizing, contains natural antibacterials to clear skin." data-ar="مغذية ومرطبة للغاية، تحتوي على مضادات بكتيريا طبيعية لتصفية وتنعيم البشرة.">Highly nourishing and moisturizing, contains natural antibacterials to clear skin.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Honey Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini kolagen.jpg" alt="Collagen Soap" class="product-img"><div class="product-info"><h4 data-en="Collagen Soap" data-ar="صابونة الكولاجين">Collagen Soap</h4><p class="product-desc" data-en="Helps improve skin elasticity and gives a tight, youthful, glowing look." data-ar="تساعد على تحسين مرونة الجلد، وتمنح مظهر شبابي مشدود ونضر.">Helps improve skin elasticity and gives a tight, youthful, glowing look.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Collagen Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini lavender.jpg" alt="Lavender Soap" class="product-img"><div class="product-info"><h4 data-en="Lavender Soap" data-ar="صابونة اللافندر">Lavender Soap</h4><p class="product-desc" data-en="Soothes sensitive skin and gives total relaxation with aromatic lavender scent." data-ar="تهدئ البشرة الحساسة وتمنح استرخاء تام بفضل عبير اللافندر العطري.">Soothes sensitive skin and gives total relaxation with aromatic lavender scent.</p><div class="product-price">6$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Lavender Soap', 6)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini 7abt lbrki.jpg" alt="Nigella Soap" class="product-img"><div class="product-info"><h4 data-en="Nigella Soap" data-ar="صابونة حبة البركة">Nigella Soap</h4><p class="product-desc" data-en="Sterilizes skin, helps treat skin inflammations and nourishes tissues." data-ar="تعقم البشرة وتساعد في علاج التهابات الجلد وتغذية الأنسجة.">Sterilizes skin, helps treat skin inflammations and nourishes tissues.</p><div class="product-price">6$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Nigella Soap', 6)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini chabi.jpg" alt="Alum Soap" class="product-img"><div class="product-info"><h4 data-en="Alum Soap" data-ar="صابونة الشبة">Alum Soap</h4><p class="product-desc" data-en="Helps tighten pores and reduces sweating naturally and safely." data-ar="تساعد على شد المسام وتقلل إفراز التعرق بشكل طبيعي وآمن.">Helps tighten pores and reduces sweating naturally and safely.</p><div class="product-price">4$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Alum Soap', 4)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini 7alib me3za.jpg" alt="Goat Milk Soap" class="product-img"><div class="product-info"><h4 data-en="Goat Milk Soap" data-ar="صابونة حليب الماعز">Goat Milk Soap</h4><p class="product-desc" data-en="Rich in vitamins and proteins for deep nourishment and hydration." data-ar="غنية بالفيتامينات والبروتينات لتغذية عميقة ومرطبة للبشرة الجافة.">Rich in vitamins and proteins for deep nourishment and hydration.</p><div class="product-price">7$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Goat Milk Soap', 7)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini zytun.jpg" alt="Olive Oil Soap" class="product-img"><div class="product-info"><h4 data-en="Olive Oil Soap" data-ar="صابونة زيت الزيتون">Olive Oil Soap</h4><p class="product-desc" data-en="Traditional authentic hydration rich in antioxidants for daily care." data-ar="الترطيب التقليدي الأصيل الغني بمضادات الأكسدة للعناية اليومية.">Traditional authentic hydration rich in antioxidants for daily care.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Olive Oil Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini krkm.jpg" alt="Turmeric Soap" class="product-img"><div class="product-info"><h4 data-en="Turmeric Soap" data-ar="صابونة الكركم">Turmeric Soap</h4><p class="product-desc" data-en="Evens skin tone, removes pigmentation and gives natural radiance." data-ar="توحد لون البشرة وتزيل التصبغات وتمنح إشراقة وتوهجاً طبيعياً.">Evens skin tone, removes pigmentation and gives natural radiance.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Turmeric Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini ahwi.jpg" alt="Coffee Soap" class="product-img"><div class="product-info"><h4 data-en="Coffee Soap" data-ar="صابونة القهوة">Coffee Soap</h4><p class="product-desc" data-en="Exfoliates dead skin, stimulates blood circulation and reduces cellulite." data-ar="تقشر الجلد الميت وتنشط الدورة الدموية وتساعد في تقليل مظهر السيلوليت.">Exfoliates dead skin, stimulates blood circulation and reduces cellulite.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Coffee Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini message.jpg" alt="Massage Soap" class="product-img"><div class="product-info"><h4 data-en="Massage Soap" data-ar="صابونة المساج">Massage Soap</h4><p class="product-desc" data-en="Designed with nodes to massage muscles and stimulate the body during bathing." data-ar="مصممة بنتوءات لتدليك العضلات وتنشيط الجسم أثناء الاستحمام.">Designed with nodes to massage muscles and stimulate the body during bathing.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Massage Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini lifi.jpg" alt="Loofah Soap" class="product-img"><div class="product-info"><h4 data-en="Loofah Soap" data-ar="صابونة الليفة">Loofah Soap</h4><p class="product-desc" data-en="Built-in natural loofah to cleanse and exfoliate smoothly." data-ar="مدمجة بليفة طبيعية لتنظيف وتقشير الجسم بكل سهولة ونعومة.">Built-in natural loofah to cleanse and exfoliate smoothly.</p><div class="product-price">3$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Loofah Soap', 3)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini tesbit.jpg" alt="Brow Soap" class="product-img"><div class="product-info"><h4 data-en="Brow Soap" data-ar="صابونة الحواجب">Brow Soap</h4><p class="product-desc" data-en="Sets and grooms eyebrow hairs naturally all day long." data-ar="لتثبيت وترتيب شعيرات الحواجب بمظهر طبيعي ومميز طوال اليوم.">Sets and grooms eyebrow hairs naturally all day long.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Brow Soap', 5)">Add to Cart</button></div>
+        </div>
+
+        <h3 class="category-title" data-en="Face Care" data-ar="العناية بالوجه">Face Care</h3>
+        <div class="products-grid">
+            <div class="product-card"><img src="images2/gemini sun protection.jpg" alt="Sun" class="product-img"><div class="product-info"><h4 data-en="Sun Protection Cream" data-ar="كريم الحماية من الشمس">Sun Protection Cream</h4><p class="product-desc" data-en="High protection from harmful sun rays and prevents pigmentation." data-ar="حماية عالية من أشعة الشمس الضارة ومنع التصبغات.">High protection from harmful sun rays and prevents pigmentation.</p><div class="product-price">14$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Sun Protection Cream', 14)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini make.up remover.jpg" alt="Remover" class="product-img"><div class="product-info"><h4 data-en="Make-up Remover" data-ar="مزيل المكياج">Make-up Remover</h4><p class="product-desc" data-en="Removes makeup gently without drying the skin." data-ar="يزيل المكياج بلطف ودون أن يسبب جفافاً للبشرة.">Removes makeup gently without drying the skin.</p><div class="product-price">8$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Make-up Remover', 8)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini foam.jpg" alt="Foam" class="product-img"><div class="product-info"><h4 data-en="Foam Cleanser" data-ar="غسول رغوي">Foam Cleanser</h4><p class="product-desc" data-en="Foamy cleanser that deeply purifies pores and refreshes the face." data-ar="غسول رغوي ينظف المسام بعمق وينعش الوجه.">Foamy cleanser that deeply purifies pores and refreshes the face.</p><div class="product-price">13$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Foam Cleanser', 13)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini moisturize.jpg" alt="Moisturizer" class="product-img"><div class="product-info"><h4 data-en="Moisturizer" data-ar="مرطب الوجه">Moisturizer</h4><p class="product-desc" data-en="Daily facial moisturizer maintaining skin barrier and hydration." data-ar="مرطب وجه يومي يحافظ على رطوبة وحاجز البشرة.">Daily facial moisturizer maintaining skin barrier and hydration.</p><div class="product-price">16$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Moisturizer', 16)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini lip balm.jpg" alt="Lip" class="product-img"><div class="product-info"><h4 data-en="Lip Balm " data-ar="مرطب الشفاه">Lip Balm & Scrub</h4><p class="product-desc" data-en="Lip scrub and balm to remove flakes and give smooth pink lips." data-ar="مقشر ومرطب للشفاه لإزالة القشور ونعومة وردية.">Lip scrub and balm to remove flakes and give smooth pink lips.</p><div class="product-price">4$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Lip Balm - Lip Scrub', 4)">Add to Cart</button></div>
+             <div class="product-card"><img src="images2/gemini lip scrub.jpg" alt="Lip" class="product-img"><div class="product-info"><h4 data-en="Lip Scrub" data-ar="مقشر الشفاه">Lip Balm & Scrub</h4><p class="product-desc" data-en="Lip scrub and balm to remove flakes and give smooth pink lips." data-ar="مقشر ومرطب للشفاه لإزالة القشور ونعومة وردية.">Lip scrub and balm to remove flakes and give smooth pink lips.</p><div class="product-price">4$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Lip Balm - Lip Scrub', 4)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini t7t l3yn.jpg" alt="Eye" class="product-img"><div class="product-info"><h4 data-en="Under Eye magic" data-ar="كريم تحت العين السحري">Under Eye magic</h4><p class="product-desc" data-en="Reduces dark circles and under-eye puffiness." data-ar="يقلل الهالات السوداء والانتفاخات تحت العين.">Reduces dark circles and under-eye puffiness.</p><div class="product-price">13$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Under Eye magic', 13)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini eclat.jpg" alt="Éclat" class="product-img"><div class="product-info"><h4 data-en="Éclat Brightening Cream" data-ar="كريم إكلا للتفتيح">Éclat Brightening Cream</h4><p class="product-desc" data-en="Advanced brightening cream for radiant, glowing skin tone." data-ar="كريم تفتيح متطور لتوهج وإشراق لون البشرة.">Advanced brightening cream for radiant, glowing skin tone.</p><div class="product-price">21$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Éclat Brightening Cream', 21)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini face lotion.jpg" alt="Scrub" class="product-img"><div class="product-info"><h4 data-en="Face Scrub" data-ar="مقشر الوجه">Face Scrub</h4><p class="product-desc" data-en="Gentle scrub removing dead cells and renewing skin." data-ar="مقشر ناعم يزيل الخلايا الميتة ويجدد البشرة.">Gentle scrub removing dead cells and renewing skin.</p><div class="product-price">9$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Face Scrub', 9)">Add to Cart</button></div>
+        </div>
+
+        <h3 class="category-title" data-en="Hair Care" data-ar="العناية بالشعر">Hair Care</h3>
+        <div class="products-grid">
+            <div class="product-card"><img src="images2/gemini message.jpg" alt="Scalp" class="product-img"><div class="product-info"><h4 data-en="Scalp Massage Soap" data-ar="صابونة تدليك فروة الرأس">Scalp Massage Soap</h4><p class="product-desc" data-en="For scalp massage and stimulating hair growth." data-ar="لتدليك فروة الرأس وتحفيز نمو الشعر.">For scalp massage and stimulating hair growth.</p><div class="product-price">5$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Scalp Massage Soap', 5)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemin root revival champo.jpg" alt="Shampoo" class="product-img"><div class="product-info"><h4 data-en="Root Revival Shampoo" data-ar="شامبو إحياء الجذور">Root Revival Shampoo</h4><p class="product-desc" data-en="Shampoo nourishing roots, strengthening hair and preventing loss." data-ar="شامبو يغذي الجذور ويقوي الشعر ويمنع تساقطه.">Shampoo nourishing roots, strengthening hair and preventing loss.</p><div class="product-price">13$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Root Revival Shampoo', 13)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini leaVE in conditioner.jpg" alt="Conditioner" class="product-img"><div class="product-info"><h4 data-en="Leave In Conditioner" data-ar="بلسم يترك على الشعر">Leave In Conditioner</h4><p class="product-desc" data-en="Leave-in conditioner for moisture and easy styling." data-ar="بلسم يترك على الشعر لترطيب وسهولة التصفيف.">Leave-in conditioner for moisture and easy styling.</p><div class="product-price">8$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Leave In Conditioner', 8)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini hair toner.jpg" alt="Toner" class="product-img"><div class="product-info"><h4 data-en="Hair Toner" data-ar="تونر الشعر">Hair Toner</h4><p class="product-desc" data-en="Scalp toner to refresh and stimulate blood circulation." data-ar="تونر لفروة الرأس لإنعاشها وتحفيز الدورة الدموية.">Scalp toner to refresh and stimulate blood circulation.</p><div class="product-price">6$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Hair Toner', 6)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini hair w body miste.jpg" alt="Mist" class="product-img"><div class="product-info"><h4 data-en="Hair Mist" data-ar="معطر الشعر">Hair Mist</h4><p class="product-desc" data-en="Hair mist with long-lasting refreshing botanical scent." data-ar="معطر شعر برائحة نباتية منعشة تدوم طويلاً.">Hair mist with long-lasting refreshing botanical scent.</p><div class="product-price">8$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Hair Mist', 8)">Add to Cart</button></div>
+
+            <div class="product-card product-card-new">
+                <div class="product-badge" data-en="New" data-ar="جديد">New</div>
+                <img src="images2/gemini sidre.jpg" alt="Sidr Powder" class="product-img">
+                <div class="product-info">
+                    <h4 data-en="Sidr Powder" data-ar="سدر ملكي">Sidr Powder</h4>
+                    <p class="product-desc" data-en="Pure royal sidr powder for a simple, natural hair-care ritual." data-ar="سدر ملكي نقي لروتين عناية طبيعي وبسيط للشعر.">Pure royal sidr powder for a simple, natural hair-care ritual.</p>
+                    <div class="product-price">9$</div>
+                </div>
+                <button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Sidr Powder - سدر ملكي', 9)">Add to Cart</button>
+            </div>
+            <div class="product-card product-card-new">
+                <div class="product-badge best" data-en="Best Seller" data-ar="الأكثر مبيعاً">Best Seller</div>
+                <img src="images2/gemini hair wax stick.jpg" alt="Hair Wax Stick" class="product-img">
+                <div class="product-info">
+                    <h4 data-en="Hair Wax Stick" data-ar="واكس ستيك للشعر">Hair Wax Stick</h4>
+                    <p class="product-desc" data-en="Easy everyday styling for neat, polished-looking hair." data-ar="لتصفيف الشعر بسهولة والحصول على مظهر مرتب وأنيق يومياً.">Easy everyday styling for neat, polished-looking hair.</p>
+                    <div class="product-price">8$</div>
+                </div>
+                <button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Hair Wax Stick - واكس ستيك للشعر', 8)">Add to Cart</button>
+            </div>
+        </div>
+
+        <h3 class="category-title" data-en="Body Care" data-ar="العناية بالجسم">Body Care</h3>
+        <div class="products-grid">
+            <div class="product-card"><img src="images1/gemini body cream.jpg" alt="Body Cream" class="product-img"><div class="product-info"><h4 data-en="Whitening Body Cream" data-ar="كريم تفتيح الجسم">Whitening Body Cream</h4><p class="product-desc" data-en="Concentrated cream to whiten and even out body and sensitive areas." data-ar="كريم مركز لتفتيح وتوحيد لون الجسم والمناطق الحساسة.">Concentrated cream to whiten and even out body and sensitive areas.</p><div class="product-price">26$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Whitening Body Cream', 26)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini deoderonn.jpg" alt="Deodorant" class="product-img"><div class="product-info"><h4 data-en="Natural Deodorant" data-ar="مزيل تعرق طبيعي">Natural Deodorant</h4><p class="product-desc" data-en="Protects all day while keeping skin soft." data-ar="يحمي طوال اليوم ويحافظ على نعومة البشرة.">Protects all day while keeping skin soft.</p><div class="product-price">7$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Natural Deodorant', 7)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini body butter.jpg" alt="Butter" class="product-img"><div class="product-info"><h4 data-en="Body Butter" data-ar="زبدة الجسم">Body Butter</h4><p class="product-desc" data-en="Rich butter for super hydration of extremely dry skin." data-ar="زبدة غنية للترطيب الفائق للبشرة الشديدة الجفاف.">Rich butter for super hydration of extremely dry skin.</p><div class="product-price">9$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Body Butter', 9)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini magnesium.jpg" alt="Magnesium" class="product-img"><div class="product-info"><h4 data-en="Magnesium Oil" data-ar="زيت الماغنيزيوم">Magnesium Oil</h4><p class="product-desc" data-en="For muscle comfort and relieving daily tension and fatigue." data-ar="لراحة العضلات وتخفيف التوتر والإرهاق اليومي.">For muscle comfort and relieving daily tension and fatigue.</p><div class="product-price">7$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Magnesium Oil', 7)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini chm3 2st7mem.jpg" alt="Beeswax" class="product-img"><div class="product-info"><h4 data-en="Beeswax Moisturizer" data-ar="مرطب شمع النحل">Beeswax Moisturizer</h4><p class="product-desc" data-en="Natural moisturizer to treat roughness and cracks." data-ar="مرطب طبيعي لعلاج الخشونة والتشققات.">Natural moisturizer to treat roughness and cracks.</p><div class="product-price">3$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Beeswax Moisturizer', 3)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemeni bath salts.jpg" alt="Salts" class="product-img"><div class="product-info"><h4 data-en="Bath Salts" data-ar="أملاح الاستحمام">Bath Salts</h4><p class="product-desc" data-en="Soak in the tub to relax and remove fatigue and stress." data-ar="تغمر المغطس للاسترخاء وإزالة التعب والإجهاد.">Soak in the tub to relax and remove fatigue and stress.</p><div class="product-price">6$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Bath Salts', 6)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini scrube.jpg" alt="Scrub" class="product-img"><div class="product-info"><h4 data-en="Body Scrub" data-ar="مقشر الجسم">Body Scrub</h4><p class="product-desc" data-en="Soothes skin and gives instant softness and vitality." data-ar="يلطف البشرة ويمنحها نعومة فورية وحيوية.">Soothes skin and gives instant softness and vitality.</p><div class="product-price">8$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Body Scrub', 8)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini chm3 2str5a2.jpg" alt="Candles" class="product-img"><div class="product-info"><h4 data-en="Bath Candles" data-ar="شموع الاستحمام">Bath Candles</h4><p class="product-desc" data-en="Aromatic candles giving soothing relaxing atmosphere." data-ar="شموع عطرية تضفي أجواء استرخاء مهدئة.">Aromatic candles giving soothing relaxing atmosphere.</p><div class="product-price">4$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Bath Candles', 4)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini body scrube.jpg" alt="Blue Nila" class="product-img"><div class="product-info"><h4 data-en="Blue Nila Scrub" data-ar="مقشر النيلة الزرقاء">Blue Nila Scrub</h4><p class="product-desc" data-en="Famous Moroccan scrub to brighten and purify the body." data-ar="مقشر مغربي شهير لتفتيح ونقاء الجسم.">Famous Moroccan scrub to brighten and purify the body.</p><div class="product-price">9$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Blue Nila Scrub', 9)">Add to Cart</button></div>
+            <div class="product-card"><img src="images1/gemini boody lotion.jpg" alt="Lotion" class="product-img"><div class="product-info"><h4 data-en="Body Lotion" data-ar="لوشن الجسم">Body Lotion</h4><p class="product-desc" data-en="Light lotion for daily body hydration with fast absorption." data-ar="لوشن خفيف لترطيب الجسم اليومي بسرعة امتصاص.">Light lotion for daily body hydration with fast absorption.</p><div class="product-price">4$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Body Lotion', 4)">Add to Cart</button></div>
+            <div class="product-card"><img src="images2/gemini hair w body miste.jpg" alt="Mist" class="product-img"><div class="product-info"><h4 data-en="Body Mist" data-ar="معطر الجسم">Body Mist</h4><p class="product-desc" data-en="Refreshing fragrant body spray." data-ar="معطر جسم برائحة فواحة ومنعشة.">Refreshing fragrant body spray.</p><div class="product-price">8$</div></div><button class="add-to-cart-btn" data-en="Add to Cart" data-ar="أضف للسلة" onclick="addToCart('Body Mist', 8)">Add to Cart</button></div>
+        </div>
+        <!-- ==================== OILS ==================== -->
+<h3 class="category-title" data-en="Oils" data-ar="الزيوت">Oils</h3>
+
+<div class="products-grid">
+
+    <!-- Frankincense Oil -->
+    <div class="product-card">
+        <img src="images2/gemini lobane zakar.jpg" alt="Frankincense Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Frankincense Oil" data-ar="زيت لبان الذكر">Frankincense Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from frankincense resin. Helps nourish, soften and refresh the skin."
+               data-ar="مستخرج من راتنج لبان الذكر. يساعد على تغذية البشرة وتنعيمها ومنحها إحساساً بالانتعاش.">
+               Extracted from frankincense resin. Helps nourish, soften and refresh the skin.
+            </p>
+            <div class="product-price">4$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Frankincense Oil', 4)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Rose Oil -->
+    <div class="product-card">
+        <img src="images2/gemini rose oil.jpg" alt="Rose Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Rose Oil" data-ar="زيت الورد">Rose Oil</h4>
+            <p class="product-desc"
+               data-en="Derived from rose petals. Leaves skin feeling soft, fresh and delicately scented."
+               data-ar="مستخرج من بتلات الورد. يمنح البشرة نعومة وانتعاشاً ورائحة وردية لطيفة.">
+               Derived from rose petals. Leaves skin feeling soft, fresh and delicately scented.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Rose Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Lavender Oil -->
+    <div class="product-card">
+        <img src="images2/gemini lavender oil.jpg" alt="Lavender Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Lavender Oil" data-ar="زيت اللافندر">Lavender Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from lavender flowers. Provides a soothing feel and a naturally calming aroma."
+               data-ar="مستخرج من أزهار اللافندر. يمنح إحساساً بالراحة ورائحة طبيعية هادئة ومنعشة.">
+               Extracted from lavender flowers. Provides a soothing feel and a naturally calming aroma.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Lavender Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="images2/gemini zyt lknb.jpg" alt="L" class="product-img">
+        <div class="product-info">
+            <h4 data-en="hemp Oil" data-ar="زيت القنب">Lavender Oil</h4>
+            <p class="product-desc"
+               data-en="Moisturizes, nourishes, soothes, and helps maintain soft, healthy-looking skin.
+"
+               data-ar="
+يرطّب البشرة، يغذّيها، يهدّئها، ويساعد على الحفاظ على نعومتها ونضارتها .
+">
+               Extracted from lavender flowers. Provides a soothing feel and a naturally calming aroma.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('hemp Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Almond Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt loz.jpg" alt="Almond Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Almond Oil" data-ar="زيت اللوز">Almond Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from almond kernels. Rich and gentle oil that helps moisturize and soften dry skin."
+               data-ar="مستخرج من حبات اللوز. زيت غني ولطيف يساعد على ترطيب وتنعيم البشرة الجافة.">
+               Pressed from almond kernels. Rich and gentle oil that helps moisturize and soften dry skin.
+            </p>
+            <div class="product-price">8$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Almond Oil', 8)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Castor Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt l5rw3.jpg" alt="Castor Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Castor Oil" data-ar="زيت الخروع">Castor Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from castor seeds. A rich oil traditionally used to nourish hair and moisturize the skin."
+               data-ar="مستخرج من بذور الخروع. زيت غني يُستخدم تقليدياً لتغذية الشعر وترطيب البشرة.">
+               Pressed from castor seeds. A rich oil traditionally used to nourish hair and moisturize the skin.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Castor Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Coconut Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt jwz lhnd.jpg" alt="Coconut Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Coconut Oil" data-ar="زيت جوز الهند">Coconut Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from coconut flesh. Helps moisturize, soften and nourish skin and hair."
+               data-ar="مستخرج من لب جوز الهند. يساعد على ترطيب وتنعيم وتغذية البشرة والشعر.">
+               Extracted from coconut flesh. Helps moisturize, soften and nourish skin and hair.
+            </p>
+            <div class="product-price">3$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Coconut Oil', 3)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Black Seed Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt 7bt lbrki.jpg" alt="Black Seed Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Black Seed Oil" data-ar="زيت حبة البركة">Black Seed Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from black seed, also known as Nigella sativa. Traditionally used to nourish skin and hair."
+               data-ar="مستخرج من حبة البركة المعروفة بالحبة السوداء. يُستخدم تقليدياً لتغذية البشرة والشعر.">
+               Pressed from black seed, also known as Nigella sativa. Traditionally used to nourish skin and hair.
+            </p>
+            <div class="product-price">8$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Black Seed Oil', 8)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Sesame Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt smsm.jpg" alt="Sesame Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Sesame Oil" data-ar="زيت السمسم">Sesame Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from sesame seeds. A nourishing oil that helps keep skin soft and moisturized."
+               data-ar="مستخرج من بذور السمسم. زيت مغذٍ يساعد على الحفاظ على نعومة البشرة وترطيبها.">
+               Pressed from sesame seeds. A nourishing oil that helps keep skin soft and moisturized.
+            </p>
+            <div class="product-price">5$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Sesame Oil', 5)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Rosemary Oil -->
+    <div class="product-card">
+        <img src="images1/gemini  2klil jbl.jpg" alt="Rosemary Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Rosemary Oil" data-ar="زيت إكليل الجبل">Rosemary Oil</h4>
+            <p class="product-desc"
+               data-en="Derived from rosemary leaves. Refreshes the scalp and supports a healthy-looking hair routine."
+               data-ar="مستخرج من أوراق إكليل الجبل. ينعش فروة الرأس ويدعم روتيناً صحياً للعناية بالشعر.">
+               Derived from rosemary leaves. Refreshes the scalp and supports a healthy-looking hair routine.
+            </p>
+            <div class="product-price">9$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Rosemary Oil', 9)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Peppermint Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt ln3n3.jpg" alt="Peppermint Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Peppermint Oil" data-ar="زيت النعناع">Peppermint Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from peppermint leaves. Gives a fresh, cooling sensation and refreshing aroma."
+               data-ar="مستخرج من أوراق النعناع. يمنح إحساساً منعشاً وبارداً مع رائحة طبيعية منعشة.">
+               Extracted from peppermint leaves. Gives a fresh, cooling sensation and refreshing aroma.
+            </p>
+            <div class="product-price">8$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Peppermint Oil', 8)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    
+
+
+    <!-- Pumpkin Seed Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt bzr l2r3.jpg" alt="Pumpkin Seed Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Pumpkin Seed Oil" data-ar="زيت بذور القرع">Pumpkin Seed Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from pumpkin seeds. Nourishing oil rich in natural components for skin and hair care."
+               data-ar="مستخرج من بذور القرع. زيت مغذٍ غني بالمكونات الطبيعية للعناية بالبشرة والشعر.">
+               Pressed from pumpkin seeds. Nourishing oil rich in natural components for skin and hair care.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Pumpkin Seed Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Myal Seeds Oil -->
+    <div class="product-card">
+        <img src="images1/gemini bezer lmyel.jpg" alt="Myal Seeds Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Myal Seeds Oil" data-ar="زيت بذور الميال">Myal Seeds Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from myal seeds. A natural nourishing oil suitable for everyday skin and hair care."
+               data-ar="مستخرج من بذور الميال. زيت طبيعي مغذٍ مناسب للعناية اليومية بالبشرة والشعر.">
+               Extracted from myal seeds. A natural nourishing oil suitable for everyday skin and hair care.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Myal Seeds Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Flaxseed Oil -->
+    <div class="product-card">
+        <img src="images1/gemini bzr lktan.jpg" alt="Flaxseed Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Flaxseed Oil" data-ar="زيت بذور الكتان">Flaxseed Oil</h4>
+            <p class="product-desc"
+               data-en="Pressed from flaxseeds. Helps nourish and soften skin while adding care to dry hair."
+               data-ar="مستخرج من بذور الكتان. يساعد على تغذية وتنعيم البشرة والعناية بالشعر الجاف.">
+               Pressed from flaxseeds. Helps nourish and soften skin while adding care to dry hair.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Flaxseed Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Chia Seed Oil -->
+    <div class="product-card">
+        <img src="images2/gemini zyt bzr chia.jpg" alt="Chia Seed Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Chia Seed Oil" data-ar="زيت بذور الشيا">Chia Seed Oil</h4>
+            <p class="product-desc"
+               data-en="Extracted from chia seeds. A lightweight nourishing oil for soft and healthy-looking skin."
+               data-ar="مستخرج من بذور الشيا. زيت خفيف ومغذٍ يساعد على منح البشرة نعومة ومظهراً صحياً.">
+               Extracted from chia seeds. A lightweight nourishing oil for soft and healthy-looking skin.
+            </p>
+            <div class="product-price">7$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Chia Seed Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Shea Butter -->
+    <div class="product-card">
+        <img src="images2/zbdt lchya gemini.jpg" alt="Shea Butter" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Shea Butter" data-ar="زبدة الشيا">Shea Butter</h4>
+            <p class="product-desc"
+               data-en="Made from the nuts of the shea tree. A rich butter that deeply moisturizes and softens dry skin."
+               data-ar="مصنوعة من ثمار شجرة الشيا. زبدة غنية تساعد على ترطيب وتنعيم البشرة الجافة.">
+               Made from the nuts of the shea tree. A rich butter that deeply moisturizes and softens dry skin.
+            </p>
+            <div class="product-price">4$</div>
+        </div>
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Shea Butter', 4)">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+
+<!-- ==================== BLOOM BLENDS ==================== -->
+<h3 class="category-title" data-en="BLOOM Blends" data-ar="خلطات BLOOM">
+    BLOOM Blends
+</h3>
+
+<div class="products-grid">
+
+    <!-- Hair Nourishing Oil Blend -->
+    <div class="product-card">
+        <img src="images2/gemini hair repair oil.jpg" alt="Hair Nourishing Oil Blend" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Hair Nourishing Oil Blend"
+                data-ar="خلطة الزيوت المغذية للشعر">
+                Hair Nourishing Oil Blend
+            </h4>
+
+            <p class="product-desc"
+               data-en="A carefully selected blend of nourishing oils for a soft, healthy-looking hair routine. Helps moisturize the hair and scalp while leaving a natural shine."
+               data-ar="خلطة مختارة من الزيوت المغذية لروتين شعر ناعم وصحي المظهر. تساعد على ترطيب الشعر وفروة الرأس وتمنحه لمعاناً طبيعياً.">
+               A carefully selected blend of nourishing oils for a soft, healthy-looking hair routine.
+               Helps moisturize the hair and scalp while leaving a natural shine.
+            </p>
+
+            <div class="product-price">9$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Hair Nourishing Oil Blend', 9)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Body Oil -->
+    <div class="product-card">
+        <img src="images1/gemini body oil.jpg" alt="Body Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Body Oil" data-ar="زيت الجسم">Body Oil</h4>
+
+            <p class="product-desc"
+               data-en="A nourishing oil blend created for daily body care. Helps keep the skin soft, smooth and comfortably moisturized."
+               data-ar="خلطة زيوت مغذية مصممة للعناية اليومية بالجسم. تساعد على الحفاظ على نعومة البشرة وترطيبها ومنحها ملمساً ناعماً.">
+               A nourishing oil blend created for daily body care.
+               Helps keep the skin soft, smooth and comfortably moisturized.
+            </p>
+
+            <div class="product-price">8$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Body Oil', 8)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Laser Alternative Oil -->
+    <div class="product-card">
+        <img src="images1/gemini bdil lyzer.jpg" alt="Laser Alternative Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Laser Alternative Oil"
+                data-ar="زيت بديل الليزر">
+                Laser Alternative Oil
+            </h4>
+
+            <p class="product-desc"
+               data-en="A BLOOM body-care blend designed to support a smooth and cared-for skin routine. Made with selected natural oils for daily use."
+               data-ar="خلطة من BLOOM مصممة لدعم روتين عناية ببشرة ناعمة ومهتم بها. تحتوي على زيوت طبيعية مختارة للاستخدام اليومي.">
+               A BLOOM body-care blend designed to support a smooth and cared-for skin routine.
+               Made with selected natural oils for daily use.
+            </p>
+
+            <div class="product-price">12$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Laser Alternative Oil', 12)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Nail Strengthening Oil -->
+    <div class="product-card">
+        <img src="images2/gemini tetwil dafir.jpg" alt="Nail Strengthening Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Nail Strengthening Oil"
+                data-ar="زيت تقوية الأظافر">
+                Nail Strengthening Oil
+            </h4>
+
+            <p class="product-desc"
+               data-en="A nourishing oil blend for caring for nails and cuticles. Helps keep them moisturized, smooth and well cared for."
+               data-ar="خلطة زيوت مغذية للعناية بالأظافر والجلد المحيط بها. تساعد على الحفاظ على ترطيبها ونعومتها ومظهرها المرتب.">
+               A nourishing oil blend for caring for nails and cuticles.
+               Helps keep them moisturized, smooth and well cared for.
+            </p>
+
+            <div class="product-price">6$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Nail Strengthening Oil', 6)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Beard Thickening Oil -->
+    <div class="product-card">
+        <img src="images2/gemini teksif le7yi.jpg" alt="Beard Thickening Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Beard Thickening Oil"
+                data-ar="زيت تكثيف اللحية">
+                Beard Thickening Oil
+            </h4>
+
+            <p class="product-desc"
+               data-en="A nourishing blend created for beard care. Helps moisturize the beard and skin underneath while keeping it soft and groomed."
+               data-ar="خلطة مغذية مخصصة للعناية باللحية. تساعد على ترطيب اللحية والبشرة تحتها والحفاظ على نعومتها ومظهرها المرتب.">
+               A nourishing blend created for beard care.
+               Helps moisturize the beard and skin underneath while keeping it soft and groomed.
+            </p>
+
+            <div class="product-price">7$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Beard Thickening Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Eyelash & Eyebrow Lengthening Oil -->
+    <div class="product-card">
+        <img src="images1/gemin eylech serum.jpg" alt="Eyelash and Eyebrow Oil" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Eyelash & Eyebrow Lengthening Oil"
+                data-ar="زيت تطويل الرموش والحواجب">
+                Eyelash & Eyebrow Lengthening Oil
+            </h4>
+
+            <p class="product-desc"
+               data-en="A gentle nourishing blend for eyelash and eyebrow care. Helps moisturize the hairs and keep them looking soft and groomed."
+               data-ar="خلطة مغذية لطيفة للعناية بالرموش والحواجب. تساعد على ترطيب الشعيرات والحفاظ على مظهرها ناعماً ومرتباً.">
+               A gentle nourishing blend for eyelash and eyebrow care.
+               Helps moisturize the hairs and keep them looking soft and groomed.
+            </p>
+
+            <div class="product-price">7$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Eyelash & Eyebrow Lengthening Oil', 7)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- Anti Age Serum -->
+    <div class="product-card">
+        <img src="images1/gemini anti,age serum.jpg" alt="Anti Age Serum" class="product-img">
+        <div class="product-info">
+            <h4 data-en="Anti Age Serum"
+                data-ar="سيروم مكافحة علامات التقدم في السن">
+                Anti Age Serum
+            </h4>
+
+            <p class="product-desc"
+               data-en="A nourishing facial serum designed for a smooth and radiant-looking skin routine. Helps moisturize the skin and gives it a fresh, cared-for appearance."
+               data-ar="سيروم مغذٍ للوجه مصمم لروتين بشرة ناعمة ومشرقة المظهر. يساعد على ترطيب البشرة ومنحها مظهراً منتعشاً ومعتنى به.">
+               A nourishing facial serum designed for a smooth and radiant-looking skin routine.
+               Helps moisturize the skin and gives it a fresh, cared-for appearance.
+            </p>
+
+            <div class="product-price">9$</div>
+        </div>
+
+        <button class="add-to-cart-btn"
+                data-en="Add to Cart" data-ar="أضف للسلة"
+                onclick="addToCart('Anti Age Serum', 9)">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+    </section>
+
+    
+            </div>
+            
+            <div class="gifts-banner">
+                <h3 data-en="Beautifully made. Personally chosen. Made to be remembered." data-ar="مصنوعة بحرفية. مختارة بشخصية. مصنوعة لتبقى في الذاكرة. ">Beautifully made. Personally chosen. Made to be remembered. 🌸</h3>
+                <a href="https://wa.me/96170550334?text=Hello%20BLOOM!%20I%20want%20to%20order%20a%20customized%20gift." target="_blank" class="btn" data-en="Order a Gift via WhatsApp" data-ar="اطلب هدية عبر الواتساب">Order a Gift via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bloom-gifts-section" id="gifts">
+        <div class="gifts-bg-slider" aria-hidden="true">
+            <div class="gift-bg-slide active" style="background-image:url('images/gift 1.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images2/gift 2.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 3.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 4.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 5.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 6.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 7.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 8.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 9.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 10.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 11.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 12.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 13.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 14.jpg')"></div>
+            <div class="gift-bg-slide" style="background-image:url('images/gift 15.jpg')"></div>
+
+        </div>
+        <div class="gifts-overlay"></div>
+
+        <div class="gifts-container">
+            <div class="gifts-heading">
+                <div class="sub-title-tag" data-en="BLOOM Gifts" data-ar="هدايا بلوم">BLOOM Gifts</div>
+                <h2 class="section-title" data-en="Thoughtful Gifts for Special Moments" data-ar="هدايا مميزة للحظات خاصة">Thoughtful Gifts for Special Moments</h2>
+                <p class="gifts-intro" data-en="Create a beautiful gift filled with natural BLOOM favorites, carefully arranged and made to feel personal. Choose your favorites and let us prepare a gift that feels as special as the person receiving it." data-ar="اصنع هدية جميلة مليئة بمنتجات بلوم الطبيعية، مرتبة بعناية ومصممة لتكون شخصية ومميزة. اختر مفضلاتك ودعنا نحضر لك هدية تليق بالشخص الذي سيحصل عليها.">Create a beautiful gift filled with natural BLOOM favorites, carefully arranged and made to feel personal. Choose your favorites and let us prepare a gift that feels as special as the person receiving it.</p>
+            </div>
+
+            <div class="gifts-gallery">
+                <button class="gift-gallery-arrow gift-prev" type="button" aria-label="Previous gift" onclick="changeGiftGallery(-1)">&#10094;</button>
+                <div class="gifts-gallery-track" id="giftsGalleryTrack">
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 1.jpg" alt="BLOOM Gift 1"></div>
+                    <div class="gift-gallery-card"><img src="images2/gift 2.jpg" alt="BLOOM Gift 2"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 3.jpg" alt="BLOOM Gift 3"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 4.jpg" alt="BLOOM Gift 4"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 5.jpg" alt="BLOOM Gift 5"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 6.jpg" alt="BLOOM Gift 6"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 7.jpg" alt="BLOOM Gift 7"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 8.jpg" alt="BLOOM Gift 8"></div>
+                    <div class="gift-gallery-card"><img src="images2/gemini gift 9.jpg" alt="BLOOM Gift 9"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 10.jpg" alt="BLOOM Gift 10"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 11.jpg" alt="BLOOM Gift 11"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 12.jpg" alt="BLOOM Gift 12"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 13.jpg" alt="BLOOM Gift 13"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 14.jpg" alt="BLOOM Gift 14"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 15.jpg" alt="BLOOM Gift 15"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 16.jpg" alt="BLOOM Gift 15"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 17.jpg" alt="BLOOM Gift 15"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 18.jpg" alt="BLOOM Gift 15"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 19.jpg" alt="BLOOM Gift 15"></div>
+                    <div class="gift-gallery-card"><img src="images1/gemini gift 20.jpg" alt="BLOOM Gift 15"></div>
+
+
+
+
+
+
+                </div>
+                <button class="gift-gallery-arrow gift-next" type="button" aria-label="Next gift" onclick="changeGiftGallery(1)">&#10095;</button>
+            </div>
+            <div class="gift-dots" id="giftDots"></div>
+
+            <div class="gifts-banner">
+                <div>
+                    <span class="gift-script" data-en="A little something special" data-ar="لمسة صغيرة مميزة">A little something special</span>
+                    <h3 data-en="Beautifully made. Personally chosen. Made to be remembered." data-ar="مصنوعة بحرفية. مختارة بشخصية. مصنوعة لتبقى في الذاكرة. ">Beautifully made. Personally chosen. Made to be remembered. 🌸</h3>
+                </div>
+                <a href="https://wa.me/96170550334?text=Hello%20BLOOM!%20I%20want%20to%20order%20a%20customized%20gift." target="_blank" class="btn" data-en="Order a Gift via WhatsApp" data-ar="اطلب هدية عبر الواتساب">Order a Gift via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="faq-left">
+                <div class="sub-title-tag" data-en="Questions" data-ar="الأسئلة">Questions</div>
+                <h2 class="section-title" style="text-align: left;" data-en="Still Have Questions?" data-ar="هل لا تزال لديك أسئلة؟">Still Have Questions?</h2>
+                <p data-en="Read the sections below and contact us if you need a consultation or any kind of help." data-ar="اقرأ الأقسام أدناه وتواصل معنا إذا كنت بحاجة لأي استشارة أو مساعدة.">Read the sections below and contact us if you need a consultation or any kind of help.</p>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span data-en="How can I make the order?" data-ar="كيف يمكنني إتمام الطلب؟">How can I make the order?</span> 
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer" data-en="You can add products to your cart and checkout directly via WhatsApp with fixed $5 delivery across Lebanon!" data-ar="يمكنك إضافة المنتجات إلى السلة والدفع مباشرة عبر الواتساب مع خدمة توصيل ثابتة بقيمة 5$ لكل لبنان!">You can add products to your cart and checkout directly via WhatsApp with fixed $5 delivery across Lebanon!</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span data-en="Do you have an offline store?" data-ar="هل لديكم متجر فعلي؟">Do you have an offline store?</span> 
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer" data-en="We are an online-exclusive boutique based in Lebanon, delivering safely and quickly to your doorstep across all Lebanese regions." data-ar="نحن متجر إلكتروني حصري في لبنان، نوصل بسلامة وبسرعة إلى باب منزلك في جميع المناطق اللبنانية.">We are an online-exclusive boutique based in Lebanon, delivering safely and quickly to your doorstep across all Lebanese regions.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span data-en="Do you ship worldwide?" data-ar="هل تشحنون لجميع أنحاء العالم؟">Do you ship worldwide?</span> 
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer" data-en="Currently, we specialize in fast and safe shipping across all Lebanese regions for a flat rate of $5." data-ar="حالياً نتخصص بالشحن السريع والآمن عبر جميع المناطق اللبنانية بسعر ثابت 5$.">Currently, we specialize in fast and safe shipping across all Lebanese regions for a flat rate of $5.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span data-en="How can I change my order?" data-ar="كيف يمكنني تغيير طلبي؟">How can I change my order?</span> 
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer" data-en="You can easily modify your items or quantities before clicking on the WhatsApp checkout button." data-ar="يمكنك بكل سهولة تعديل منتجاتك أو الكميات قبل النقر على زر إتمام الطلب عبر الواتساب.">You can easily modify your items or quantities before clicking on the WhatsApp checkout button.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-right">
+                <div class="image-stack">
+                    <img src="images1/25r chi gemini 22.jpg" alt="Bath Routine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <span data-en="Your Cart" data-ar="سلة التسوق">Your Cart</span>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <p style="text-align: center; color: #888; margin-top: 40px;" data-en="Your cart is empty" data-ar="سلة التسوق فارغة">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span data-en="Total (incl. $5 delivery):" data-ar="المجموع (شامل توصيل 5$):">Total (incl. $5 delivery):</span>
+                <span id="cartTotalPrice">$5.00</span>
+            </div>
+            <button class="checkout-whatsapp-btn" onclick="checkoutWhatsApp()">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i> <span data-en="Checkout via WhatsApp" data-ar="إتمام الطلب عبر الواتساب">Checkout via WhatsApp</span>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 data-en="BLOOM" data-ar="بلوم">BLOOM</h3>
+                <p data-en="We produce handmade soap from cold-pressed olive oil, coconut oil, and cocoa butter. Each of our soap bars is an extensive source of vitamin E and antioxidants. Turn your routine washing-up into a pleasant ritual." data-ar="ننتج صابوناً يدوياً من زيت الزيتون المعصور على البارد، زيت جوز الهند، زبدة الكاكاو. كل قطعة صابون هي مصدر غني بفيتامين E ومضادات الأكسدة. اجعل روتين غسيلك طقساً ممتعاً.">We produce handmade soap from cold-pressed olive oil, coconut oil, and cocoa butter. Each of our soap bars is an extensive source of vitamin E and antioxidants. Turn your routine washing-up into a pleasant ritual.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-en="Navigation" data-ar="التنقل">Navigation</h3>
+                <ul>
+                    <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#story" data-en="Our Story" data-ar="قصتنا">Our Story</a></li>
+                    <li><a href="#products" data-en="Categories" data-ar="التصنيفات">Categories</a></li>
+                    <li><a href="#gifts" data-en="BLOOM Gifts" data-ar="هدايا بلوم">BLOOM Gifts</a></li>
+                    <li><a href="#faq" data-en="Contact us" data-ar="اتصل بنا">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-en="Contacts" data-ar="معلومات الاتصال">Contacts</h3>
+                <p><strong data-en="E-mail:" data-ar="البريد الإلكتروني:">E-mail:</strong> bloom.soap.lb@gmail.com</p>
+                <p><strong data-en="Phone:" data-ar="الهاتف:">Phone:</strong> +961 70 550 334</p>
+                <p><strong data-en="Address:" data-ar="العنوان:">Address:</strong> Online Store - All Lebanon</p>
+                
+                <div class="social-links" style="margin-top: 15px; display: flex; gap: 15px;">
+                    <a href="https://www.tiktok.com/@bloom_soap_lb?_r=1&_t=ZS-99QAXvTbyUP" target="_blank" style="color: white; font-size: 1.3rem;"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/bloom.soap.lb?igsi=MXcyYTJoeXY2NXhqbA==" target="_blank" style="color: white; font-size: 1.3rem;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/19WLjnxqZ5/" target="_blank" style="color: white; font-size: 1.3rem;"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="&copy; 2026 BLOOM Natural Soap Shop. All rights reserved. Online Exclusive in Lebanon 🇱🇧" data-ar="&copy; 2026 متجر بلوم للصوابين الطبيعية. جميع الحقوق محفوظة. متجر إلكتروني حصري في لبنان 🇱🇧">&copy; 2026 BLOOM Natural Soap Shop. All rights reserved. Online Exclusive in Lebanon 🇱🇧</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
